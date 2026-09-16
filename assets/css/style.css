@@ -177,6 +177,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: flex; flex-direction: column; align-items: center; gap: 12px;
 }
 .scroll-cue .label { writing-mode: vertical-rl; letter-spacing: 0.34em; font-size: 10px; }
+@media (max-width: 760px) { .page-hero--cue .works-intro, .page-hero--cue .hero-side { padding-right: 36px; } }
 @media (max-width: 760px) { .scroll-cue { top: auto; bottom: calc(20px + env(safe-area-inset-bottom)); right: 16px; gap: 10px; } .scroll-cue i { height: 44px; } }
 .scroll-cue i { position: relative; display: block; width: 1px; height: 64px; overflow: hidden; background: var(--line); }
 .scroll-cue i::after { content: ""; position: absolute; left: 0; top: 0; width: 1px; height: 45%; background: linear-gradient(transparent, var(--ice)); animation: scrollCue 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
