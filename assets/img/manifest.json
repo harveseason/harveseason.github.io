@@ -1,0 +1,640 @@
+{
+ "volkswagen-app": [
+  {
+   "src": "volkswagen-app/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "Cover.jpg"
+  },
+  {
+   "src": "volkswagen-app/1.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "volkswagen-app/2.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "2.jpg"
+  },
+  {
+   "src": "volkswagen-app/3.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "3.jpg"
+  },
+  {
+   "src": "volkswagen-app/4.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "4.jpg"
+  },
+  {
+   "src": "volkswagen-app/5.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "5.jpg"
+  },
+  {
+   "src": "volkswagen-app/6.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "6.jpg"
+  },
+  {
+   "src": "volkswagen-app/7.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "7.jpg"
+  },
+  {
+   "src": "volkswagen-app/8.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "8.jpg"
+  },
+  {
+   "src": "volkswagen-app/9.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "9.jpg"
+  },
+  {
+   "src": "volkswagen-app/10.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "10.jpg"
+  },
+  {
+   "src": "volkswagen-app/11.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "11.jpg"
+  },
+  {
+   "src": "volkswagen-app/13.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "13.jpg"
+  }
+ ],
+ "taipei-twins": [
+  {
+   "src": "taipei-twins/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "cover.png"
+  },
+  {
+   "src": "taipei-twins/1.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "taipei-twins/3.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "3.jpg"
+  },
+  {
+   "src": "taipei-twins/4.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "4.jpg"
+  },
+  {
+   "src": "taipei-twins/5.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "5.jpg"
+  },
+  {
+   "src": "taipei-twins/6.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "6.jpg"
+  },
+  {
+   "src": "taipei-twins/7.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "7.jpg"
+  },
+  {
+   "src": "taipei-twins/8.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "8.jpg"
+  },
+  {
+   "src": "taipei-twins/9.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "9.jpg"
+  },
+  {
+   "src": "taipei-twins/10.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "10.jpg"
+  },
+  {
+   "src": "taipei-twins/11.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "11.jpg"
+  },
+  {
+   "src": "taipei-twins/12.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "12.jpg"
+  },
+  {
+   "src": "taipei-twins/13.jpg",
+   "w": 1920,
+   "h": 1173,
+   "orig": "13.jpg"
+  }
+ ],
+ "shin-kong-mitsukoshi": [
+  {
+   "src": "shin-kong-mitsukoshi/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "cover.jpeg"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/1.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "1.jpeg"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/2.jpg",
+   "w": 1920,
+   "h": 1079,
+   "orig": "2.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/3.jpg",
+   "w": 1920,
+   "h": 1078,
+   "orig": "3.jpg"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/4.jpg",
+   "w": 1920,
+   "h": 1068,
+   "orig": "4.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/5.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "5.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/6.jpg",
+   "w": 1920,
+   "h": 1075,
+   "orig": "6.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/7.jpg",
+   "w": 1920,
+   "h": 1077,
+   "orig": "7.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/8.jpg",
+   "w": 1920,
+   "h": 1065,
+   "orig": "8.jpg"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/9.jpg",
+   "w": 1920,
+   "h": 1078,
+   "orig": "9.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/10.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "10.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/11.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "11.png"
+  },
+  {
+   "src": "shin-kong-mitsukoshi/12.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "12.png"
+  }
+ ],
+ "singleton-website": [
+  {
+   "src": "singleton-website/cover.jpg",
+   "w": 1600,
+   "h": 1600,
+   "orig": "首圖.jpg"
+  },
+  {
+   "src": "singleton-website/s4-1.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "重點優化項目4圖片1.png"
+  },
+  {
+   "src": "singleton-website/s4-2.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "重點優化項目4圖片2.jpg"
+  },
+  {
+   "src": "singleton-website/s5.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "重點優化項目5圖片.png"
+  }
+ ],
+ "diageo-line-mini-app": [
+  {
+   "src": "diageo-line-mini-app/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "cover.jpg"
+  },
+  {
+   "src": "diageo-line-mini-app/1.jpg",
+   "w": 1920,
+   "h": 1280,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "diageo-line-mini-app/2.jpg",
+   "w": 1920,
+   "h": 1280,
+   "orig": "2.jpg"
+  },
+  {
+   "src": "diageo-line-mini-app/3.jpg",
+   "w": 1920,
+   "h": 1280,
+   "orig": "3.jpg"
+  },
+  {
+   "src": "diageo-line-mini-app/4.jpg",
+   "w": 1920,
+   "h": 1280,
+   "orig": "4.jpg"
+  },
+  {
+   "src": "diageo-line-mini-app/5.jpg",
+   "w": 1920,
+   "h": 1758,
+   "orig": "5.jpg"
+  },
+  {
+   "src": "diageo-line-mini-app/6.jpg",
+   "w": 1920,
+   "h": 1722,
+   "orig": "6.jpg"
+  }
+ ],
+ "diageo-liff-page": [
+  {
+   "src": "diageo-liff-page/cover.jpg",
+   "w": 1600,
+   "h": 1138,
+   "orig": "cover.jpg"
+  },
+  {
+   "src": "diageo-liff-page/1.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "diageo-liff-page/2.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "2.jpg"
+  },
+  {
+   "src": "diageo-liff-page/3.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "3.jpg"
+  }
+ ],
+ "diageo-liff-module": [
+  {
+   "src": "diageo-liff-module/cover.jpg",
+   "w": 1600,
+   "h": 1132,
+   "orig": "cover.jpg"
+  },
+  {
+   "src": "diageo-liff-module/1.jpg",
+   "w": 1920,
+   "h": 1358,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "diageo-liff-module/2.jpg",
+   "w": 1536,
+   "h": 1024,
+   "orig": "2.png"
+  },
+  {
+   "src": "diageo-liff-module/3.jpg",
+   "w": 1920,
+   "h": 1365,
+   "orig": "3.jpeg"
+  },
+  {
+   "src": "diageo-liff-module/4.jpg",
+   "w": 1920,
+   "h": 1204,
+   "orig": "4.png"
+  }
+ ],
+ "samsung-dashboard": [
+  {
+   "src": "samsung-dashboard/1.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "samsung-dashboard/2.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "2.jpg"
+  }
+ ],
+ "tft-app": [
+  {
+   "src": "tft-app/cover.jpg",
+   "w": 1600,
+   "h": 1600,
+   "orig": "cover.jpg"
+  },
+  {
+   "src": "tft-app/1.jpg",
+   "w": 1920,
+   "h": 960,
+   "orig": "1.png"
+  },
+  {
+   "src": "tft-app/2.jpg",
+   "w": 1920,
+   "h": 1078,
+   "orig": "2.png"
+  },
+  {
+   "src": "tft-app/3.jpg",
+   "w": 1920,
+   "h": 1078,
+   "orig": "3.png"
+  },
+  {
+   "src": "tft-app/4.jpg",
+   "w": 1920,
+   "h": 1079,
+   "orig": "4.png"
+  },
+  {
+   "src": "tft-app/5.jpg",
+   "w": 1920,
+   "h": 1075,
+   "orig": "5.png"
+  },
+  {
+   "src": "tft-app/6.jpg",
+   "w": 1920,
+   "h": 1079,
+   "orig": "6.png"
+  },
+  {
+   "src": "tft-app/7.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "7.jpg"
+  }
+ ],
+ "conde-nast-sia": [
+  {
+   "src": "conde-nast-sia/cover.jpg",
+   "w": 1600,
+   "h": 900,
+   "orig": "cover.jpg"
+  },
+  {
+   "src": "conde-nast-sia/1.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "conde-nast-sia/2.jpg",
+   "w": 1920,
+   "h": 1371,
+   "orig": "2.jpg"
+  },
+  {
+   "src": "conde-nast-sia/3.jpg",
+   "w": 1920,
+   "h": 1440,
+   "orig": "3.jpg"
+  },
+  {
+   "src": "conde-nast-sia/4.jpg",
+   "w": 1920,
+   "h": 1358,
+   "orig": "4.jpg"
+  },
+  {
+   "src": "conde-nast-sia/5.jpg",
+   "w": 1920,
+   "h": 1358,
+   "orig": "5.jpg"
+  }
+ ],
+ "conde-nast-summit": [
+  {
+   "src": "conde-nast-summit/cover.jpg",
+   "w": 1600,
+   "h": 1549,
+   "orig": "cover.png"
+  },
+  {
+   "src": "conde-nast-summit/1.jpg",
+   "w": 1920,
+   "h": 6159,
+   "orig": "1.png"
+  }
+ ],
+ "gq-business-school": [
+  {
+   "src": "gq-business-school/cover.jpg",
+   "w": 1418,
+   "h": 1109,
+   "orig": "cover.png"
+  },
+  {
+   "src": "gq-business-school/1.jpg",
+   "w": 1920,
+   "h": 10633,
+   "orig": "1.jpg"
+  }
+ ],
+ "vogue-illustration": [
+  {
+   "src": "vogue-illustration/cover.jpg",
+   "w": 1132,
+   "h": 1389,
+   "orig": "cover.png"
+  },
+  {
+   "src": "vogue-illustration/1.jpg",
+   "w": 1920,
+   "h": 3837,
+   "orig": "1.png"
+  },
+  {
+   "src": "vogue-illustration/2.jpg",
+   "w": 1920,
+   "h": 3837,
+   "orig": "2.png"
+  },
+  {
+   "src": "vogue-illustration/3.jpg",
+   "w": 1920,
+   "h": 3837,
+   "orig": "3.png"
+  },
+  {
+   "src": "vogue-illustration/4.jpg",
+   "w": 1920,
+   "h": 3837,
+   "orig": "4.png"
+  },
+  {
+   "src": "vogue-illustration/5.jpg",
+   "w": 1920,
+   "h": 3837,
+   "orig": "5.png"
+  }
+ ],
+ "asahi-airline": [
+  {
+   "src": "asahi-airline/cover.jpg",
+   "w": 1547,
+   "h": 1017,
+   "orig": "cover.png"
+  },
+  {
+   "src": "asahi-airline/1.jpg",
+   "w": 1920,
+   "h": 1262,
+   "orig": "1.jpg"
+  },
+  {
+   "src": "asahi-airline/2.jpg",
+   "w": 1920,
+   "h": 1262,
+   "orig": "2.jpg"
+  },
+  {
+   "src": "asahi-airline/3.jpg",
+   "w": 1920,
+   "h": 1262,
+   "orig": "3.jpg"
+  },
+  {
+   "src": "asahi-airline/4.jpg",
+   "w": 1920,
+   "h": 1262,
+   "orig": "4.jpg"
+  }
+ ],
+ "jti-mini-app": [
+  {
+   "src": "jti-mini-app/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "cover"
+  },
+  {
+   "src": "jti-mini-app/hero.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "hero"
+  },
+  {
+   "src": "jti-mini-app/flow.jpg",
+   "w": 1920,
+   "h": 1180,
+   "orig": "flow"
+  },
+  {
+   "src": "jti-mini-app/long.jpg",
+   "w": 1920,
+   "h": 3400,
+   "orig": "long"
+  }
+ ],
+ "psc-aio": [
+  {
+   "src": "psc-aio/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "cover.jpg"
+  },
+  {
+   "src": "psc-aio/hero.jpg",
+   "w": 1920,
+   "h": 1080,
+   "orig": "hero.jpg"
+  },
+  {
+   "src": "psc-aio/entry.jpg",
+   "w": 1920,
+   "h": 967,
+   "orig": "entry.jpg"
+  },
+  {
+   "src": "psc-aio/modules.jpg",
+   "w": 1920,
+   "h": 2195,
+   "orig": "modules.jpg"
+  },
+  {
+   "src": "psc-aio/states.jpg",
+   "w": 1920,
+   "h": 1917,
+   "orig": "states.jpg"
+  },
+  {
+   "src": "psc-aio/survey.jpg",
+   "w": 1920,
+   "h": 1861,
+   "orig": "survey.jpg"
+  },
+  {
+   "src": "psc-aio/delete.jpg",
+   "w": 1920,
+   "h": 940,
+   "orig": "delete.jpg"
+  }
+ ]
+}
