@@ -193,7 +193,7 @@ def build_home():
   <div class="wrap">
     <div class="split">
       <div class="reveal">
-        <h2 class="label" style="margin:0 0 28px">設計方法｜Approach</h2>
+        <h2 class="label" style="margin:0 0 clamp(32px, 4vw, 56px)">設計方法｜Approach</h2>
         <p class="zh-lead" style="margin:0">從問題出發，<br>創造兼具美感與價值的體驗設計。</p>
       </div>
       <div class="prose reveal">
