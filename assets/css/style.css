@@ -315,7 +315,7 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
   .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .stat:nth-child(2) { border-right: 0; }
   .stat:nth-child(3) { padding-left: 0; }
-  .stat:nth-child(n+3) { padding-top: 28px; border-top: 1px solid var(--line); margin-top: 28px; }
+  .stat:nth-child(n+3) { padding-top: 0; border-top: 0; margin-top: 36px; }
 }
 
 /* ---------- awards ---------- */
