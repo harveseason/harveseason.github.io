@@ -363,3 +363,22 @@
     img.addEventListener("animationend", () => img.closest(".portrait").classList.add("is-developed"));
   });
 })();
+
+/* mobile swipe cards: page dots */
+(() => {
+  document.querySelectorAll(".skills, .awards").forEach((track) => {
+    const items = [...track.children];
+    if (items.length < 2) return;
+    const dots = document.createElement("div");
+    dots.className = "swipe-dots"; dots.setAttribute("aria-hidden", "true");
+    items.forEach(() => dots.appendChild(document.createElement("i")));
+    track.after(dots);
+    const update = () => {
+      const x = track.scrollLeft, w = track.scrollWidth - track.clientWidth;
+      const idx = w <= 0 ? 0 : Math.round((x / w) * (items.length - 1));
+      dots.querySelectorAll("i").forEach((d, i) => d.classList.toggle("on", i === idx));
+    };
+    track.addEventListener("scroll", () => requestAnimationFrame(update), { passive: true });
+    update();
+  });
+})();
