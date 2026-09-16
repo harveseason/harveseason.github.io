@@ -271,6 +271,8 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
   background: linear-gradient(90deg, var(--ice), rgba(188, 216, 250, 0));
   transform: scaleX(0); transform-origin: left; transition: transform 0.8s var(--ease);
 }
+.index-list li:last-child { border-bottom: 0; }
+.index-list li:last-child::after { display: none; }
 .index-list .num, .index-list h3, .index-list p { transition: color 0.5s var(--ease), transform 0.6s var(--ease), text-shadow 0.6s var(--ease), letter-spacing 0.6s var(--ease); }
 @media (hover: hover) {
   .index-list:hover li { color: var(--muted); }
