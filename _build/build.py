@@ -12,6 +12,8 @@ DIMS = {i["src"]: (i["w"], i["h"]) for v in MANIFEST.values() for i in v}
 CAT = {k: (zh, en) for k, zh, en in CATEGORIES}
 BY_SLUG = {p["slug"]: p for p in PROJECTS}
 e = html.escape
+import hashlib
+ASSET_V = hashlib.md5((open(os.path.join(ROOT,"assets/css/style.css"),"rb").read()+open(os.path.join(ROOT,"assets/js/main.js"),"rb").read())).hexdigest()[:8]
 
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Inter+Tight:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;600&display=swap" rel="stylesheet">'
 
@@ -42,7 +44,7 @@ def head(title, desc, pre):
 <meta property="og:type" content="website">
 <link rel="icon" href="{pre}assets/img/favicon.svg" type="image/svg+xml">
 {FONTS}
-<link rel="stylesheet" href="{pre}assets/css/style.css">
+<link rel="stylesheet" href="{pre}assets/css/style.css?v={ASSET_V}">
 </head>
 <body>
 <div class="glow" aria-hidden="true"></div>
@@ -115,7 +117,7 @@ def footer(pre):
     <span class="label label--muted">© 2026 Harvey Huang. All Rights Reserved.</span>
   </div>
 </footer>
-<script src="{pre}assets/js/main.js" defer></script>
+<script src="{pre}assets/js/main.js?v={ASSET_V}" defer></script>
 </body>
 </html>
 """
