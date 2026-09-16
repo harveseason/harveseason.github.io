@@ -296,7 +296,7 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
 .prose p strong { color: var(--ink); font-weight: 500; }
 
 .stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); margin-top: clamp(40px, 6vw, 72px); }
-.stat { padding: 28px 20px 0 0; border-right: 1px solid var(--line); }
+.stat { padding: 28px 20px 0 0; border-right: 0; }
 .stat:last-child { border-right: 0; }
 .stat + .stat { padding-left: 20px; }
 .stat b { display: block; font-family: var(--f-display); font-weight: 700; font-size: clamp(40px, 5.2vw, 76px); line-height: 1; letter-spacing: -0.03em; background: linear-gradient(180deg, #fff, #7fa9dc); -webkit-background-clip: text; background-clip: text; color: transparent; }
