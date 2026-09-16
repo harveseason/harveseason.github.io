@@ -177,8 +177,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   display: flex; flex-direction: column; align-items: center; gap: 12px;
 }
 .scroll-cue .label { writing-mode: vertical-rl; letter-spacing: 0.34em; font-size: 10px; }
-@media (max-width: 760px) { .page-hero--cue .works-intro, .page-hero--cue .hero-side { padding-right: 36px; } }
-@media (max-width: 760px) { .scroll-cue { top: auto; bottom: calc(20px + env(safe-area-inset-bottom)); right: 16px; gap: 10px; } .scroll-cue i { height: 44px; } }
+@media (max-width: 760px) { .scroll-cue { top: 50%; bottom: auto; right: 16px; gap: 10px; transform: translateY(-50%); } .scroll-cue i { height: 44px; } }
+@media (max-width: 600px) { .section-head { flex-direction: column; align-items: flex-start; gap: 14px; } }
 .scroll-cue i { position: relative; display: block; width: 1px; height: 64px; overflow: hidden; background: var(--line); }
 .scroll-cue i::after { content: ""; position: absolute; left: 0; top: 0; width: 1px; height: 45%; background: linear-gradient(transparent, var(--ice)); animation: scrollCue 2.2s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
 .scroll-cue .label { animation: scrollCueText 2.2s ease-in-out infinite; }
@@ -470,9 +470,15 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
 .process li:hover .st-dot { background: var(--ice); box-shadow: 0 0 14px var(--ice); transform: scale(1.25); }
 .process li:hover .st-num { color: var(--ice); }
 @media (max-width: 600px) {
-  .process { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 28px; }
-  .process::before { display: none; }
-  .process .st-dot { margin: 6px 0 10px; }
+  /* mobile: static vertical timeline (no hover on touch) */
+  .process { grid-template-columns: 1fr; row-gap: 0; margin: 32px 0 8px; }
+  .process::before { display: block; left: 4px; right: auto; top: 22px; bottom: 22px; width: 1px; height: auto; background: linear-gradient(180deg, var(--line-2), var(--line) 85%, transparent); }
+  .process li { display: grid; grid-template-columns: 26px 40px auto 1fr; align-items: center; column-gap: 0; padding: 14px 0; }
+  .process .st-dot { grid-column: 1; grid-row: 1; margin: 0; background: var(--ice-2); border-color: var(--ice); box-shadow: 0 0 10px rgba(188, 216, 250, 0.35); }
+  .process .st-num { grid-column: 2; grid-row: 1; color: var(--ice-2); }
+  .process b { grid-column: 3; grid-row: 1; margin-right: 14px; }
+  .process small { grid-column: 4; grid-row: 1; }
+  .process li:hover .st-dot { transform: none; }
 }
 
 .facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(24px, 4vw, 56px); }
