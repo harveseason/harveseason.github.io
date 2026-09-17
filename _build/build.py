@@ -516,9 +516,10 @@ def build_project(idx):
     <a class="next" href="{pre}projects/{nxt['slug']}.html" aria-label="下一個作品：{e(nxt['title'])}">
       <div class="next-media">{img(nxt['slug'], cover_name(nxt), nxt['zh'], pre)}</div>
       <div class="next-text">
-        <div class="next-head"><h2 class="next-title">{e(nxt['title'])}</h2><span class="next-arr" aria-hidden="true">→</span></div>
+        <h2 class="next-title">{e(nxt['title'])}</h2>
         <p class="next-zh">{e(nxt['zh'])}</p>
         <p class="next-tags">{e(' / '.join(nxt['tags'][:3]))}</p>
+        <span class="next-arr" aria-hidden="true"><svg viewBox="0 0 48 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path class="shaft" d="M1 6h45"/><path d="M40 1l6 5-6 5"/></svg></span>
       </div>
     </a>
   </div>
