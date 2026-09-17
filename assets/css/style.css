@@ -953,3 +953,5 @@ h1, h2, h3, h4, .card-title, .next-title, .tl-role h4, .skill h4, .award .medal,
 .card-title { transition: color .35s var(--ease), text-shadow .35s var(--ease); }
 .card-title.is-scr { color: var(--ice); text-shadow: 0 0 18px rgba(127, 169, 220, 0.55); }
 .card-title .sc { color: #e9f2fc; }
+
+@media (min-width: 861px) { .approach-lead { white-space: nowrap; font-size: clamp(17px, 1.55vw, 24px); letter-spacing: 0.06em; } }

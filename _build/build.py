@@ -194,7 +194,7 @@ def build_home():
     <div class="split">
       <div class="reveal">
         <h2 class="label" style="margin:0 0 clamp(32px, 4vw, 56px)">Approach</h2>
-        <p class="zh-lead" style="margin:0">從問題出發，創造兼具美感與價值的體驗設計。</p>
+        <p class="zh-lead approach-lead" style="margin:0">從問題出發，創造兼具美感與價值的體驗設計。</p>
       </div>
       <div class="prose reveal">
         <p>從需求、體驗到視覺與互動，我在意每個決定背後的原因，也會從<strong>商業目標、使用者需求與技術條件</strong>出發，找到兼顧體驗與視覺表現的設計解法。</p>
