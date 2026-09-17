@@ -127,7 +127,6 @@ def card(p, i, pre, eager=False):
     zh_cat, en_cat = CAT[p["cat"]]
     return f"""<a class="card reveal" href="{pre}projects/{p['slug']}.html" data-cat="{p['cat']}" data-scramble-trigger>
   <div class="card-media">
-    <span class="card-num num">{i:02d}</span>
     {img(p['slug'], cover_name(p), p['zh'], pre, eager=eager)}
   </div>
   <div class="card-body">
