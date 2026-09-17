@@ -399,3 +399,26 @@
     update();
   });
 })();
+
+/* next project card: pixel mosaic sweep on hover */
+(() => {
+  if (!window.matchMedia("(hover: hover)").matches || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  document.querySelectorAll(".next").forEach((card) => {
+    const cols = 24, rows = 8;
+    const pix = document.createElement("div");
+    pix.className = "next-pix"; pix.setAttribute("aria-hidden", "true");
+    pix.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+    pix.style.gridTemplateRows = `repeat(${rows}, 1fr)`;
+    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) {
+      const i = document.createElement("i");
+      i.style.setProperty("--dl", ((c / cols) * 0.55 + Math.random() * 0.25).toFixed(2) + "s");
+      pix.appendChild(i);
+    }
+    card.appendChild(pix);
+    let t;
+    card.addEventListener("mouseenter", () => {
+      card.classList.remove("is-pix"); void card.offsetWidth; card.classList.add("is-pix");
+      clearTimeout(t); t = setTimeout(() => card.classList.remove("is-pix"), 1900);
+    });
+  });
+})();
