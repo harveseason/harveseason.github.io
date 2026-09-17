@@ -510,11 +510,18 @@ def build_project(idx):
     </div>
   </div>
 </section>
-<a class="next wrap" href="{pre}projects/{nxt['slug']}.html" style="display:block">
-  <span class="label">下一個作品｜Next Project →</span>
-  <span class="blur-type"><span class="ln">{e(nxt['title'])}</span></span>
-  <p class="next-zh">{e(nxt['zh'])}</p>
+<section class="next-wrap">
+<a class="next wrap" href="{pre}projects/{nxt['slug']}.html" aria-label="下一個作品：{e(nxt['title'])}">
+  <div class="next-text">
+    <span class="label">下一個作品｜Next Project</span>
+    <h2 class="next-title">{e(nxt['title'])}</h2>
+    <p class="next-zh">{e(nxt['zh'])}</p>
+    <p class="next-tags">{e(' / '.join(nxt['tags'][:3]))}</p>
+    <span class="next-go"><i aria-hidden="true">→</i><span>View Project</span></span>
+  </div>
+  <div class="next-media">{img(nxt['slug'], cover_name(nxt), nxt['zh'], pre)}</div>
 </a>
+</section>
 </article>
 """
     s += contact(pre) + footer(pre)
