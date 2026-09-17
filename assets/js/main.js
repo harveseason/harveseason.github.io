@@ -51,7 +51,24 @@
         { passive: true }
       );
     } else {
-      setInterval(() => { current = (current + 1) % lines.length; set(current); }, 2600);
+      /* touch: lines focus one by one when the block enters view, then stay readable
+         with a gentle highlight that drifts from line to line */
+      const soft = (idx) => lines.forEach((ln, i) => {
+        ln.style.setProperty("--b", i === idx ? "0px" : "1.4px");
+        ln.style.setProperty("--o", i === idx ? "1" : "0.82");
+      });
+      lines.forEach((ln) => { ln.style.setProperty("--b", "12px"); ln.style.setProperty("--o", "0.35"); });
+      const start = () => {
+        lines.forEach((ln, i) => setTimeout(() => { ln.style.setProperty("--b", "0px"); ln.style.setProperty("--o", "1"); }, 150 + i * 260));
+        setTimeout(() => {
+          soft(0);
+          setInterval(() => { current = (current + 1) % lines.length; soft(current); }, 2800);
+        }, 400 + lines.length * 260 + 1400);
+      };
+      if ("IntersectionObserver" in window) {
+        const ob = new IntersectionObserver((en) => { if (en.some((x) => x.isIntersecting)) { ob.disconnect(); start(); } }, { threshold: 0.35 });
+        ob.observe(block);
+      } else start();
     }
   });
 

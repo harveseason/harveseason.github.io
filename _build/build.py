@@ -481,7 +481,7 @@ def build_project(idx):
 <section class="p-hero">
   <div class="wrap">
     <a class="link-arrow p-back" href="{pre}projects.html"><span aria-hidden="true">←</span> All works</a>
-    <div class="p-kicker"><span class="num">{idx + 1:02d} / {len(PROJECTS):02d}</span><span class="rule"></span><span class="label">{zh_cat}｜{en_cat}</span></div>
+    <div class="p-kicker"><span class="label">{zh_cat}｜{en_cat}</span></div>
     <h1 class="p-title">{e(p['title'])}</h1>
     <p class="p-zh">{e(p['zh'])}</p>
     {award}

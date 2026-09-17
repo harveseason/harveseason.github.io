@@ -544,7 +544,7 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
 
 .p-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: clamp(36px, 4vw, 56px); }
 
-.next { display: block; padding: clamp(64px, 9vw, 120px) 0; border-top: 1px solid var(--line); }
+.next { display: block; padding-top: clamp(64px, 9vw, 120px); padding-bottom: clamp(64px, 9vw, 120px); border-top: 1px solid var(--line); }
 .next .label { display: block; margin-bottom: 18px; }
 .next .blur-type { font-size: clamp(40px, 8vw, 128px); line-height: 0.95; }
 .next .blur-type .ln { --b: 8px; --o: 0.5; white-space: normal; }
@@ -831,4 +831,20 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
 @media (max-width: 760px) {
   .intro-facts { grid-template-columns: 56px 1fr; font-size: var(--fs-body-sm); }
   .p-intro .zh-lead { font-size: 18px; line-height: 1.8; letter-spacing: 0.04em; }
+}
+
+/* ---------- touch devices: no hover-dependent reading ---------- */
+@media (hover: none) {
+  .next .blur-type .ln { --b: 0px; --o: 1; }
+  .next .label { color: var(--ice); }
+}
+/* mobile: swipe tracks stay horizontal (page does not drift while swiping cards) */
+@media (max-width: 760px) {
+  .skills, .awards { touch-action: pan-x; overscroll-behavior: contain; }
+  /* contact: resume button + icon-only email / linkedin in one row */
+  .contact-actions { flex-wrap: nowrap; align-items: center; gap: 10px; }
+  .contact-actions .btn { flex: 0 1 auto; height: 44px; white-space: nowrap; padding-left: 20px; padding-right: 20px; }
+  .contact-actions .icon-btn { width: 44px; height: 44px; padding: 0; justify-content: center; flex: none; }
+  .contact-actions .icon-btn span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .contact-actions .icon-btn svg { width: 18px; height: 18px; }
 }
