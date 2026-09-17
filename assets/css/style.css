@@ -508,7 +508,13 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
 .p-meta h3 { margin: 0 0 10px; }
 .p-meta p { margin: 0; color: var(--ink); font-size: var(--fs-body-sm); }
 .p-meta .pills { gap: 8px; }
-.p-meta .pill { height: 30px; padding: 0 14px; font-size: var(--fs-xs); }
+.p-meta .pills { gap: 8px; margin-top: 2px; }
+.p-meta .pill {
+  height: 28px; padding: 0 11px 0 9px; gap: 7px;
+  font-size: var(--fs-sm); letter-spacing: 0.02em; font-weight: 500; color: var(--ice);
+  background: rgba(127, 169, 220, 0.12); border: 1px solid rgba(188, 216, 250, 0.16); border-radius: 6px;
+}
+.p-meta .pill::before { content: ""; width: 5px; height: 5px; border-radius: 1.5px; background: var(--ice-2); flex: none; }
 @media (max-width: 860px) { .p-meta { grid-template-columns: 1fr; } }
 
 .p-cover { margin-top: clamp(8px, 1vw, 16px); }
