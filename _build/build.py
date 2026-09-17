@@ -79,7 +79,7 @@ def header(pre, current):
         return f'<a class="nav-link" href="{pre}{href}"{cur}>{label}</a>'
     return f"""<header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{"#top" if current == "home" else pre + "index.html"}" aria-label="{"回到頁面頂端" if current == "home" else "Harvey Huang 首頁"}"><img src="{pre}assets/img/logo.png" width="1200" height="537" alt="Harvey Design"><span class="brand-hint" aria-hidden="true">{"↑ Back to Top" if current == "home" else "← Back to Home"}</span></a>
+    <a class="brand" href="{"#top" if current == "home" else pre + "index.html"}" aria-label="{"回到頁面頂端" if current == "home" else "Harvey Huang 首頁"}"><img src="{pre}assets/img/logo.png" width="1200" height="537" alt="Harvey Design">{"" if current == "home" else '<span class="brand-hint" aria-hidden="true">← Back to Home</span>'}</a>
     <button class="menu-btn" aria-label="選單" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
     <nav class="nav" id="nav" aria-label="主要導覽">
       {nl('about.html', 'ABOUT', 'about')}
