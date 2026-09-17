@@ -511,16 +511,17 @@ def build_project(idx):
   </div>
 </section>
 <section class="next-wrap">
-<a class="next wrap" href="{pre}projects/{nxt['slug']}.html" aria-label="下一個作品：{e(nxt['title'])}">
-  <div class="next-text">
-    <span class="label">下一個作品｜Next Project</span>
-    <h2 class="next-title">{e(nxt['title'])}</h2>
-    <p class="next-zh">{e(nxt['zh'])}</p>
-    <p class="next-tags">{e(' / '.join(nxt['tags'][:3]))}</p>
-    <span class="next-go"><i aria-hidden="true">→</i><span>View Project</span></span>
+  <div class="wrap">
+    <span class="label next-label">下一個作品｜Next Project</span>
+    <a class="next" href="{pre}projects/{nxt['slug']}.html" aria-label="下一個作品：{e(nxt['title'])}">
+      <div class="next-media">{img(nxt['slug'], cover_name(nxt), nxt['zh'], pre)}</div>
+      <div class="next-text">
+        <div class="next-head"><h2 class="next-title">{e(nxt['title'])}</h2><span class="next-arr" aria-hidden="true">→</span></div>
+        <p class="next-zh">{e(nxt['zh'])}</p>
+        <p class="next-tags">{e(' / '.join(nxt['tags'][:3]))}</p>
+      </div>
+    </a>
   </div>
-  <div class="next-media">{img(nxt['slug'], cover_name(nxt), nxt['zh'], pre)}</div>
-</a>
 </section>
 </article>
 """
