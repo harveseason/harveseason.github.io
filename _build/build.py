@@ -518,7 +518,6 @@ def build_project(idx):
         <h2 class="next-title">{e(nxt['title'])}</h2>
         <p class="next-zh">{e(nxt['zh'])}</p>
         <p class="next-tags">{e(' / '.join(nxt['tags'][:3]))}</p>
-        <span class="next-arr" aria-hidden="true"><svg viewBox="0 0 48 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path class="shaft" d="M1 6h45"/><path d="M40 1l6 5-6 5"/></svg></span>
       </div>
     </a>
   </div>
