@@ -7,9 +7,9 @@
   --bg: #04060a;
   --bg-2: #0a0f17;
   --bg-3: #111824;
-  --ink: #eef4fb;
-  --ink-2: #c1cedc;
-  --muted: #8a98aa;
+  --ink: #f3f7fc;
+  --ink-2: #aab7c7;
+  --muted: #717e8f;
   --ice: #bcd8fa;
   --ice-2: #7fa9dc;
   --ice-3: #3d5f8c;
@@ -899,3 +899,14 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
 
 
 
+
+/* ---------- refined text hierarchy ----------
+   L1 title  #F3F7FC  near-white, cool
+   L2 body   #AAB7C7  soft steel
+   L3 meta   #717E8F  quiet slate
+   label     #7FA9DC  ice accent (section / kicker labels)
+*/
+.label { color: var(--ice-2); }
+.label--muted { color: var(--muted); }
+h1, h2, h3, h4, .card-title, .next-title, .tl-role h4, .skill h4, .award .medal, .intro-quote, .zh-lead { color: var(--ink); }
+.intro-lead, .p-intro .zh-lead { color: #dde5ee; }
