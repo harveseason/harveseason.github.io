@@ -86,7 +86,6 @@ PROJECTS = [
             ("Outcome", "重新梳理售後服務與愛車資訊的架構，全面升級預約保養流程，共完成 200+ 頁介面設計，並獲得 2024 DSA 數位奇點獎金獎。"),
         ],
         "gallery": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "13"],
-        "links": [("觀看獎項影片", "https://www.youtube.com/watch?v=mvJdcn54BvY")],
     },
     {
         "slug": "taipei-twins",
