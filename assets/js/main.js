@@ -79,6 +79,7 @@
     if (reduce || el._busy) { if (done) done(); return; }
     const text = el.dataset.text || (el.dataset.text = el.textContent);
     el._busy = true;
+    el.classList.add("is-scr");
     const glyphs = el.dataset.glyphs || GLYPHS;
     let frame = 0;
     const total = el.dataset.glyphs ? 34 : Math.min(26, 8 + text.length);
@@ -95,7 +96,7 @@
       if (el.dataset.glyphs) el.innerHTML = out;
       else el.innerHTML = `<span class="scr-ghost" aria-hidden="true">${esc(text)}</span><span class="scr-live" aria-hidden="true">${out}</span>`;
       if (++frame <= total) requestAnimationFrame(tick);
-      else { el.textContent = text; el._busy = false; if (done) done(); }
+      else { el.textContent = text; el._busy = false; setTimeout(() => el.classList.remove("is-scr"), 260); if (done) done(); }
     };
     tick();
   };
@@ -408,8 +409,16 @@
   const btn = document.querySelector(".to-top");
   if (btn) {
     btn.addEventListener("click", () => up());
-    const toggle = () => btn.classList.toggle("is-on", window.scrollY > window.innerHeight * 0.9);
-    window.addEventListener("scroll", toggle, { passive: true }); toggle();
+    let lastY = window.scrollY;
+    const toggle = () => {
+      const y = window.scrollY;
+      const down = y > lastY + 2, upward = y < lastY - 2;
+      if (y < window.innerHeight) btn.classList.remove("is-on");
+      else if (down) btn.classList.add("is-on");
+      else if (upward) btn.classList.remove("is-on");
+      lastY = y;
+    };
+    window.addEventListener("scroll", () => requestAnimationFrame(toggle), { passive: true });
   }
   document.querySelectorAll('.brand[href="#top"]').forEach((a) => a.addEventListener("click", up));
 })();

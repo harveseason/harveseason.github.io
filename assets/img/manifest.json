@@ -369,6 +369,12 @@
  ],
  "samsung-dashboard": [
   {
+   "src": "samsung-dashboard/cover.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orig": "cover.jpg"
+  },
+  {
    "src": "samsung-dashboard/1.jpg",
    "w": 1920,
    "h": 1080,
@@ -473,8 +479,8 @@
   {
    "src": "conde-nast-summit/cover.jpg",
    "w": 1600,
-   "h": 1549,
-   "orig": "cover.png"
+   "h": 1200,
+   "orig": "cover.jpg"
   },
   {
    "src": "conde-nast-summit/1.jpg",

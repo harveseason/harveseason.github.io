@@ -208,7 +208,6 @@ PROJECTS = [
         "cat": "product",
         "role": ["UI Design｜Harvey Huang"],
         "tags": ["Dashboard", "Data Visualization", "UI Design"],
-        "cover": "1",
         "lead": "企業內部使用的 Dashboard 介面設計，將大量數據與列表整理成清楚易讀的視覺層級。",
         "sections": [],
         "hero_video": "samsung-1.mp4",

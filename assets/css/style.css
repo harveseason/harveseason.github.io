@@ -278,7 +278,7 @@ button.pill[aria-pressed="true"] { background: linear-gradient(110deg, #e9f2fc, 
   background: linear-gradient(90deg, var(--ice), rgba(188, 216, 250, 0));
   transform: scaleX(0); transform-origin: left; transition: transform 0.8s var(--ease);
 }
-.index-list li:last-child { border-bottom: 0; padding-bottom: 0; }
+.index-list li:last-child { border-bottom: 0; }
 .index-list li:last-child::after { display: none; }
 .index-list .num, .index-list h3, .index-list p { transition: color 0.5s var(--ease), transform 0.6s var(--ease), text-shadow 0.6s var(--ease), letter-spacing 0.6s var(--ease); }
 @media (hover: hover) {
@@ -933,3 +933,23 @@ h1, h2, h3, h4, .card-title, .next-title, .tl-role h4, .skill h4, .award .medal,
 }
 @media (max-width: 760px) { .to-top { width: 44px; height: 44px; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); } .to-top span { display: none; } }
 @media (prefers-reduced-motion: reduce) { .to-top, .to-top svg { transition: none; } }
+
+/* ---------- round 12 refinements ---------- */
+.section:has(.index-list) { padding-bottom: max(0px, calc(clamp(56px, 7vw, 104px) - 28px)); }
+/* stats: equal breathing room above (from line) and below (to next section line) */
+.section:has(> .wrap > .stats:last-child) { padding-bottom: 0; }
+.stats { padding: clamp(40px, 5vw, 72px) 0; }
+.stat { padding-top: 0; }
+/* job titles */
+.tl-role h4 { color: var(--ice); font-size: clamp(17px, 0.5vw + 15px, 20px); font-weight: 600; letter-spacing: 0.005em; }
+.tl-role .when { color: var(--muted); }
+/* capability group titles */
+.skill-col h3.label { font-family: var(--f-display); font-size: clamp(18px, 0.6vw + 15px, 22px); font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--ink); margin-bottom: 18px; }
+/* to-top: icon only */
+.to-top { gap: 0; }
+.to-top span { display: none; }
+@media (max-width: 760px) { .to-top { width: 44px; height: 44px; } }
+/* card title colour shift while scrambling */
+.card-title { transition: color .35s var(--ease), text-shadow .35s var(--ease); }
+.card-title.is-scr { color: var(--ice); text-shadow: 0 0 18px rgba(127, 169, 220, 0.55); }
+.card-title .sc { color: #e9f2fc; }

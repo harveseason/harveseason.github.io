@@ -111,7 +111,7 @@ def contact(pre):
 
 
 def footer(pre):
-    return f"""<button class="to-top" type="button" aria-label="回到頁面頂端"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg><span>Top</span></button>
+    return f"""<button class="to-top" type="button" aria-label="回到頁面頂端"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
 </main>
 <footer class="site-footer">
   <div class="wrap">
@@ -194,7 +194,7 @@ def build_home():
     <div class="split">
       <div class="reveal">
         <h2 class="label" style="margin:0 0 clamp(32px, 4vw, 56px)">Approach</h2>
-        <p class="zh-lead" style="margin:0">從問題出發，<br>創造兼具美感與價值的體驗設計。</p>
+        <p class="zh-lead" style="margin:0">從問題出發，創造兼具美感與價值的體驗設計。</p>
       </div>
       <div class="prose reveal">
         <p>從需求、體驗到視覺與互動，我在意每個決定背後的原因，也會從<strong>商業目標、使用者需求與技術條件</strong>出發，找到兼顧體驗與視覺表現的設計解法。</p>
@@ -289,7 +289,6 @@ def build_about():
         </dl>
       </aside>
       <div class="intro-main">
-        <span class="label reveal">About</span>
         <p class="intro-quote reveal" style="--d:.08s">在未知的世界裡，<br>一起探索設計的更多可能！</p>
         <div class="intro-body">
           <p class="intro-lead reveal" style="--d:.12s">我是 Harvey 黃威霖，擁有 7+ 年經驗的設計師，擅長將複雜需求轉化為清晰、直覺且具視覺吸引力的數位體驗。</p>
