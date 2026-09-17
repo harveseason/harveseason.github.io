@@ -79,7 +79,7 @@ def header(pre, current):
         return f'<a class="nav-link" href="{pre}{href}"{cur}>{label}</a>'
     return f"""<header class="site-header">
   <div class="wrap">
-    <a class="brand" href="{pre}index.html" aria-label="Harvey Huang 首頁"><img src="{pre}assets/img/logo.png" width="1200" height="537" alt="Harvey Design"><span class="brand-hint" aria-hidden="true">← Back to Home</span></a>
+    <a class="brand" href="{"#top" if current == "home" else pre + "index.html"}" aria-label="{"回到頁面頂端" if current == "home" else "Harvey Huang 首頁"}"><img src="{pre}assets/img/logo.png" width="1200" height="537" alt="Harvey Design"><span class="brand-hint" aria-hidden="true">{"↑ Back to Top" if current == "home" else "← Back to Home"}</span></a>
     <button class="menu-btn" aria-label="選單" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
     <nav class="nav" id="nav" aria-label="主要導覽">
       {nl('about.html', 'ABOUT', 'about')}
@@ -111,7 +111,8 @@ def contact(pre):
 
 
 def footer(pre):
-    return f"""</main>
+    return f"""<button class="to-top" type="button" aria-label="回到頁面頂端"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg><span>Top</span></button>
+</main>
 <footer class="site-footer">
   <div class="wrap">
     <span class="label label--muted">© 2026 Harvey Huang. All Rights Reserved.</span>

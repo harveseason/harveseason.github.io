@@ -400,3 +400,16 @@
   });
 })();
 
+
+/* back to top + logo on home scrolls up */
+(() => {
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const up = (e) => { if (e) e.preventDefault(); window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" }); };
+  const btn = document.querySelector(".to-top");
+  if (btn) {
+    btn.addEventListener("click", () => up());
+    const toggle = () => btn.classList.toggle("is-on", window.scrollY > window.innerHeight * 0.9);
+    window.addEventListener("scroll", toggle, { passive: true }); toggle();
+  }
+  document.querySelectorAll('.brand[href="#top"]').forEach((a) => a.addEventListener("click", up));
+})();
