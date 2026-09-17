@@ -167,7 +167,7 @@ def build_home():
 <section class="section" id="works">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="label">精選作品｜Featured Works</h2>
+      <h2 class="label">Featured Works</h2>
       <a class="link-arrow" href="projects.html">View all <span class="arr" aria-hidden="true">→</span></a>
     </div>
     <div class="works-grid">
@@ -178,7 +178,7 @@ def build_home():
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2 class="label">專業領域｜Expertise</h2></div>
+    <div class="section-head"><h2 class="label">Expertise</h2></div>
     <ul class="index-list">
       <li class="reveal"><span class="num">(01)</span><h3>Product Design<small>產品設計</small></h3><p>UI / UX · App &amp; LINE Mini App · Dashboard · Design System</p></li>
       <li class="reveal"><span class="num">(02)</span><h3>Web Experience<small>網站體驗</small></h3><p>Brand Website · Campaign Site · RWD · Interaction</p></li>
@@ -192,7 +192,7 @@ def build_home():
   <div class="wrap">
     <div class="split">
       <div class="reveal">
-        <h2 class="label" style="margin:0 0 clamp(32px, 4vw, 56px)">設計方法｜Approach</h2>
+        <h2 class="label" style="margin:0 0 clamp(32px, 4vw, 56px)">Approach</h2>
         <p class="zh-lead" style="margin:0">從問題出發，<br>創造兼具美感與價值的體驗設計。</p>
       </div>
       <div class="prose reveal">
@@ -247,16 +247,16 @@ def build_about():
     s = head("About｜Harvey Huang", "Harvey Huang 黃威霖，資深 UX / UI 設計師。工作經歷、專業能力與獲獎紀錄。", pre)
     s += header(pre, "about")
     skills = [
-        ("使用者體驗｜UX Design", [("strategy", "使用者體驗策略", "從商業目標與使用者需求出發，釐清問題並制定具體且可執行的體驗策略。"),
+        ("UX Design", [("strategy", "使用者體驗策略", "從商業目標與使用者需求出發，釐清問題並制定具體且可執行的體驗策略。"),
                        ("flow", "User Flow & Information Architecture", "將複雜的資訊與操作流程重新組織，建立清晰且直覺的使用者旅程。"),
                        ("research", "User Research & Testing", "透過質化與量化洞察及使用者測試，驗證設計方向並持續改善產品體驗。")]),
-        ("介面設計｜UI Design", [("product", "Digital Product Design", "設計網站、App 與數位產品的完整介面體驗，兼顧使用性、視覺表現與品牌特色。"),
+        ("UI Design", [("product", "Digital Product Design", "設計網站、App 與數位產品的完整介面體驗，兼顧使用性、視覺表現與品牌特色。"),
                        ("interaction", "Visual & Interaction Design", "結合視覺系統、互動模式與動態體驗，創造具吸引力且易於理解的數位介面。"),
                        ("responsive", "Responsive Design", "規劃不同裝置與螢幕尺寸下的體驗，維持一致且流暢的使用感受。")]),
-        ("設計系統｜Design System", [("system", "Design System", "建立與維護可擴充的 Design System，提升產品體驗的一致性與設計效率。"),
+        ("Design System", [("system", "Design System", "建立與維護可擴充的 Design System，提升產品體驗的一致性與設計效率。"),
                            ("component", "Component Design", "設計可重複使用的 UI Components 與 Patterns，提升設計與開發效率。"),
                            ("guide", "Design Guidelines", "建立設計原則與規範，維持跨產品、跨平台的設計一致性。")]),
-        ("團隊協作｜Collaboration", [("collab", "跨部門協作", "與 PM、RD、編輯及其他利害關係人合作，確保設計從概念順利落地。"),
+        ("Collaboration", [("collab", "跨部門協作", "與 PM、RD、編輯及其他利害關係人合作，確保設計從概念順利落地。"),
                            ("lead", "Design Leadership", "擔任 UI Lead，負責設計方向、任務分配、設計品質把關與團隊協作。")]),
     ]
     skill_html = "".join(
@@ -288,7 +288,7 @@ def build_about():
         </dl>
       </aside>
       <div class="intro-main">
-        <span class="label reveal">關於我｜About</span>
+        <span class="label reveal">About</span>
         <p class="intro-quote reveal" style="--d:.08s">在未知的世界裡，<br>一起探索設計的更多可能！</p>
         <div class="intro-body">
           <p class="intro-lead reveal" style="--d:.12s">我是 Harvey 黃威霖，擁有 7+ 年經驗的設計師，擅長將複雜需求轉化為清晰、直覺且具視覺吸引力的數位體驗。</p>
@@ -310,7 +310,7 @@ def build_about():
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2 class="label">工作經歷｜Experience</h2></div>
+    <div class="section-head"><h2 class="label">Experience</h2></div>
     <ol class="timeline">
       <li class="tl-org reveal">
         <div><h3 class="org-logo"><img src="assets/img/logos/ogilvy-white.png" width="800" height="310" alt="奧美 Ogilvy" style="height:52px"></h3><div class="meta">2020 — 至今 · 台北，台灣</div></div>
@@ -352,7 +352,7 @@ def build_about():
 
 <section class="section section--follow">
   <div class="wrap">
-    <div class="section-head"><h2 class="label">教育背景｜Education</h2></div>
+    <div class="section-head"><h2 class="label">Education</h2></div>
     <ol class="timeline">
       <li class="tl-org reveal">
         <div><h3>元智大學</h3><div class="meta">桃園，台灣</div></div>
@@ -368,14 +368,14 @@ def build_about():
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2 class="label">專業能力｜Capabilities</h2></div>
+    <div class="section-head"><h2 class="label">Capabilities</h2></div>
     <div class="skills">{skill_html}</div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="section-head"><h2 class="label">榮譽與獎項｜Awards</h2></div>
+    <div class="section-head"><h2 class="label">Awards</h2></div>
     <div class="awards">
       <article class="award reveal">
         <div class="award-top">
@@ -415,11 +415,11 @@ def build_about():
   <div class="wrap">
     <div class="facts">
       <div class="reveal">
-        <h3 class="label">產業經驗｜Industries</h3>
+        <h3 class="label">Industries</h3>
         <ul class="pills pills--hover">{''.join(f'<li class="pill">{x}</li>' for x in inds)}</ul>
       </div>
       <div class="reveal">
-        <h3 class="label">設計工具｜Tools</h3>
+        <h3 class="label">Tools</h3>
         <dl>
           <dt>Design</dt><dd>Figma · FigJam · Adobe Creative Suite</dd>
           <dt>Prototyping</dt><dd>Wireframe · High-fidelity · Interactive Prototype</dd>
@@ -443,8 +443,8 @@ def build_project(idx):
     zh_cat, en_cat = CAT[p["cat"]]
     tags = "".join(f'<li class="pill">{e(t)}</li>' for t in p["tags"])
     role = p.get("role")
-    meta3 = (f'<div><h3 class="label label--muted">擔任角色｜Role</h3><p>{"<br>".join(e(r) for r in role) if isinstance(role, list) else e(role)}</p></div>' if role
-             else f'<div><h3 class="label label--muted">作品分類｜Category</h3><p>{zh_cat} · {en_cat}</p></div>')
+    meta3 = (f'<div><h3 class="label label--muted">Role</h3><p>{"<br>".join(e(r) for r in role) if isinstance(role, list) else e(role)}</p></div>' if role
+             else f'<div><h3 class="label label--muted">Category</h3><p>{en_cat}</p></div>')
     award = f'<p class="p-award">{e(p["award"])}</p>' if p.get("award") else ""
     secs = "".join(f'<div class="p-sec reveal"><h3>{e(h)}</h3><p>{e(t)}</p></div>' for h, t in p["sections"])
     secs_html = f'<div class="p-sections">{secs}</div>' if secs else ""
@@ -480,14 +480,14 @@ def build_project(idx):
 <section class="p-hero">
   <div class="wrap">
     <a class="link-arrow p-back" href="{pre}projects.html"><span aria-hidden="true">←</span> All works</a>
-    <div class="p-kicker"><span class="label">{zh_cat}｜{en_cat}</span></div>
+    <div class="p-kicker"><span class="label">{en_cat}</span></div>
     <h1 class="p-title">{e(p['title'])}</h1>
     <p class="p-zh">{e(p['zh'])}</p>
     {award}
     <div class="p-meta">
-      <div><h3 class="label label--muted">客戶｜Client</h3><p>{e(p['client'])}</p></div>
+      <div><h3 class="label label--muted">Client</h3><p>{e(p['client'])}</p></div>
       {meta3}
-      <div><h3 class="label label--muted">專案範疇｜Scope</h3><ul class="pills">{tags}</ul></div>
+      <div><h3 class="label label--muted">Scope</h3><ul class="pills">{tags}</ul></div>
     </div>
   </div>
 </section>
@@ -495,7 +495,7 @@ def build_project(idx):
 <section class="section">
   <div class="wrap">
     <div class="p-intro reveal">
-      <span class="label">專案概述｜Overview</span>
+      <span class="label">Overview</span>
       <p class="zh-lead">{e(p['lead'])}</p>
     </div>
     {secs_html}
@@ -511,7 +511,7 @@ def build_project(idx):
 </section>
 <section class="next-wrap">
   <div class="wrap">
-    <span class="label next-label">下一個作品｜Next Project</span>
+    <span class="label next-label">Next Project</span>
     <a class="next" href="{pre}projects/{nxt['slug']}.html" aria-label="下一個作品：{e(nxt['title'])}">
       <div class="next-media">{img(nxt['slug'], cover_name(nxt), nxt['zh'], pre)}</div>
       <div class="next-text">
