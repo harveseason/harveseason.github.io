@@ -217,8 +217,8 @@ def build_home():
 def build_projects():
     pre = ""
     cards = "\n".join(card(p, i + 1, pre, eager=i < 2) for i, p in enumerate(PROJECTS))
-    filters = f'<button class="pill" data-filter="all" aria-pressed="true">全部 All ({len(PROJECTS)})</button>' + "".join(
-        f'<button class="pill" data-filter="{k}" aria-pressed="false">{zh} {en}</button>' for k, zh, en in CATEGORIES)
+    filters = f'<button class="pill" data-filter="all" aria-pressed="true">All ({len(PROJECTS)})</button>' + "".join(
+        f'<button class="pill" data-filter="{k}" aria-pressed="false">{en}</button>' for k, zh, en in CATEGORIES)
     s = head("Works｜Harvey Huang", "Harvey Huang 的作品集：數位產品、互動體驗與品牌體驗設計。", pre)
     s += header(pre, "projects")
     s += f"""<section class="page-hero page-hero--cue page-hero--works page-hero--full">
