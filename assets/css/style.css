@@ -104,8 +104,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   white-space: nowrap;
   filter: blur(var(--b, 10px));
   opacity: var(--o, 0.55);
-  text-shadow: 0 0 40px rgba(127, 169, 220, 0.55);
-  transition: filter 0.9s var(--ease), opacity 0.9s var(--ease);
+  text-shadow: 0 0 14px rgba(127, 169, 220, 0.26), 0 0 44px rgba(127, 169, 220, 0.18),
+    0 0 110px rgba(127, 169, 220, 0.12);
+  transition: filter 0.9s var(--ease), opacity 0.9s var(--ease), text-shadow 0.9s var(--ease);
   will-change: filter;
 }
 
