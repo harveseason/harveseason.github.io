@@ -102,11 +102,13 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .blur-type .ln {
   display: block;
   white-space: nowrap;
-  filter: blur(var(--b, 10px));
+  /* glow lives in the filter chain, not in text-shadow: a text-shadow on a
+     filtered element is clipped to the filter region (WebKit) and shows up as a
+     hard rectangle. drop-shadow expands the region and follows the glyph alpha. */
+  filter: blur(var(--b, 10px)) drop-shadow(0 0 9px rgba(127, 169, 220, 0.34))
+    drop-shadow(0 0 30px rgba(127, 169, 220, 0.2));
   opacity: var(--o, 0.55);
-  text-shadow: 0 0 14px rgba(127, 169, 220, 0.26), 0 0 44px rgba(127, 169, 220, 0.18),
-    0 0 110px rgba(127, 169, 220, 0.12);
-  transition: filter 0.9s var(--ease), opacity 0.9s var(--ease), text-shadow 0.9s var(--ease);
+  transition: filter 0.9s var(--ease), opacity 0.9s var(--ease);
   will-change: filter;
 }
 
